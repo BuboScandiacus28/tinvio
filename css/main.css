@@ -12,7 +12,7 @@
 body {
 	font-family: 'Manrope', sans-serif;
     font-size: 12px;
-    line-height: 1.2;
+    line-height: normal;
     letter-spacing: 0.18px;
     color: #21272e;
 
@@ -36,6 +36,8 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+
+    font-weight: bold;
 }
 
 .container {
@@ -46,6 +48,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 16px;
 
     text-align: center;
+
+    position: relative;
 }
 
 /* Header */
@@ -133,7 +137,100 @@ h1, h2, h3, h4, h5, h6 {
 /* intro */
 
 .intro {
-    background-image: linear-gradient(0deg,#fff 411px,#fafbfc 0);
+    background-image: linear-gradient(0deg,#fff 664px,#fafbfc 0);
+
     width: 100%;
-    height: 100vh;
+}
+
+.intro .container {
+    padding-top: 195px;
+}
+
+.intro__background-cols {
+    display: flex;
+    justify-content: space-between;
+    height: 550px;
+    width: calc(100% + 60px);
+    transform: translate(-30px, -70px);
+}
+
+.intro__left-background-img,
+.intro__right-background-img {
+    position: relative;
+    
+    width: 30%;
+}
+
+.intro__left-background-img {
+    background: url(../img/Boxes.png) no-repeat;
+    background-size: 100%;
+
+    transform: translate(-105px, 0px);
+}
+
+.intro__right-background-img {
+    background: url(../img/Fruits.png) no-repeat;
+    background-size: 85%;
+
+    transform: translate(115px, -15px);
+}
+
+.intro__dotted-path {
+    position: absolute;
+    top: 0;
+
+    background: url(../img/line-1.png) 100% 0 no-repeat;
+    background-size: 601px 781px;
+    background-position: left 588px top 8px;
+
+    z-index: 0;
+
+    height: 789px;
+    width: 100%;
+}
+
+.intro__inner {
+    position: absolute;
+    top: 195px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 812px;
+}
+
+.intro__suptitle {
+    letter-spacing: 0.7px;
+
+    color: #f43939;
+}
+
+.intro__title {
+    margin: 14px auto 50px;
+
+    letter-spacing: 0.1px;
+    font-size: 2.6rem;
+}
+
+.intro__btn {
+    padding: 14px 45px 17px;
+
+    font-size: 1rem;
+
+    border-radius: 8px;
+    
+    background-image: linear-gradient(104deg, #ff474d, #fa4353);
+    color: #fff;
+}
+
+.intro__btn-description {
+    margin-top: 16px;
+
+    letter-spacing: 0.2px;
+}
+
+.intro__home-page {
+    width: 84%;
+
+    transform: translateY(-145px);
 }
