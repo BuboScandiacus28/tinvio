@@ -10,11 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <!-- ./CSS -->
 </head>
 
 <body>
-    
+
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -32,7 +34,7 @@
                 </div>
             </div>
         </div>
-    </header> 
+    </header>
 
     <section class="intro">
         <div class="container">
@@ -48,8 +50,8 @@
                 <p class="intro__btn-description">Yes, it’s free 🎉</p>
             </div>
             <div class="intro__home-page-container">
-                <img src="./img/Home page_with shadow.png" alt="Домашняя страница" class="intro__home-page"> 
-            </div>  
+                <img src="./img/Home page_with shadow.png" alt="Домашняя страница" class="intro__home-page">
+            </div>
         </div>
     </section>
 
@@ -60,16 +62,49 @@
                 <h2 class="section-title">Trusted by 1000+ partners across APAC</h2>
                 <div class="partners__items-container">
                     <img src="./img/GoCheken.png" alt="Иконка партнера" class="partners__item">
-                    <img src="./img/Jolliebean.svg" alt="Иконка партнера" class="partners__item partners__item_horizontal">
+                    <img src="./img/Jolliebean.svg" alt="Иконка партнера"
+                        class="partners__item partners__item_horizontal">
                     <img src="./img/Bens.svg" alt="Иконка партнера" class="partners__item">
-                    <img src="./img/SimplyWrapps.png" alt="Иконка партнера" class="partners__item partners__item_horizontal">
+                    <img src="./img/SimplyWrapps.png" alt="Иконка партнера"
+                        class="partners__item partners__item_horizontal">
                     <img src="./img/Italian.png" alt="Иконка партнера" class="partners__item partners__item_horizontal">
                 </div>
             </div>
         </div>
     </section>
 
-    <script id='pixelPerfectLib' data-src-to-imgs='./img/Supplier_1280.png, ./img/Supplier_1024.png, ./img/Supplier_768.png, ./img/Supplier_360.png'
+    <section class="product-present">
+        <div class="product-present__description">
+            <h2 class="product-present__title section-title">All your orders in one place</h2>
+            <p class="product-present__description-text">Say no more to chunky emails and messy WhatsApp
+                messages. Receive and manage your orders in one platform</p>
+        </div>
+        <ul class="product-present__carusel owl-carousel">
+            <li class="item product-present__item">
+                <div class="product-present__img-container">
+                    <img class="product-present__img" src="./img/Orders.png" alt="">
+                </div>
+            </li>
+            <li class="item product-present__item">
+                <div class="product-present__img-container">
+                    <img class="product-present__img" src="./img/Operational Costs.png" alt="">
+                </div>
+            </li>
+            <li class="item product-present__item">
+                <div class="product-present__img-container">
+                    <img class="product-present__img" src="./img/Analytics.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <script src="./libs/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script src="./js/common.js"></script>
+
+    <script id='pixelPerfectLib'
+        data-src-to-imgs='./img/Supplier_1280.png, ./img/Supplier_1024.png, ./img/Supplier_768.png, ./img/Supplier_360.png'
         data-btns-description='1280px, 1024px, 768px, 360px' data-enabled-layot='1280px' src='./js/lib.js'>
     </script>
 </body>
