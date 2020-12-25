@@ -421,3 +421,133 @@ div.product-present__img-container_last-item img.product-present__img {
     border-radius: 50%;
     background-color: rgba(33, 39, 46, 0.15) !important;
 } 
+
+/* communication */
+
+.communication {
+    margin-top: 120px;
+
+    background-color: #fafafc;
+
+    padding-top: 92px;
+    padding-bottom: 82px;
+}
+
+.communication .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.communication__before-content.active,
+.communication__after-content.active {
+    display: block;
+}
+
+.communication__before-content,
+.communication__after-content {
+    display: none;
+
+    width: 50%;
+    height: 410px;
+
+    position: relative;
+}
+
+.communication__lottie-player {
+    width: 650px;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translate(60px, -60px);
+}
+
+.communication__before-content {
+    transform: translate(32px, 17px);
+}
+
+.communication__before-description-container,
+.communication__after-description-container {
+    position: absolute;
+
+    bottom: 44px;
+    right: -525px;
+
+    width: 400px;
+
+    text-align: left;
+}
+
+.communication__after-description-container {
+    bottom: 28px;
+    right: -556px;
+}
+
+.communication__after-description-title,
+.communication__before-description-title {
+    font-size: 1.1rem;
+
+    letter-spacing: 0.54px;
+
+    padding-bottom: 15px;
+}
+
+.communication__before-description-text,
+.communication__after-description-text {
+    font-size: 1.05rem;
+
+    letter-spacing: 1.12px;
+
+    line-height: 29px;
+}
+
+.communication__befor-and-afte-btn-container {
+    text-align: left;
+
+    padding-left: 12.55%;
+
+    width: 50%;
+}
+
+.communication__before-btn::after {
+    position: absolute;
+    content: '';
+    bottom: -66px;
+    left: 0;
+
+    width: 410px;
+    height: 1px;
+
+    background-color: #21272e;
+}
+
+.communication__before-btn,
+.communication__after-btn {
+    position: relative;
+
+    text-transform: uppercase;
+
+    font-weight: 700;
+
+    margin-top: 40px;
+    margin-right: 20px;
+    padding: 16px 36px;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: #787c80;
+
+    border: 1px solid #dae1e8;
+    border-radius: 8px;
+}
+
+.communication__after-btn {
+    padding: 16px 40px;
+}
+
+.communication__before-btn.active,
+.communication__after-btn.active {
+    background-color: #fff;
+    color: #f43939;
+}

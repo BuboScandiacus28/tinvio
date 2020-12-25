@@ -17,3 +17,19 @@ $('.owl-nav button.owl-next')[0].addEventListener('click', () => {
     document.querySelector(`#product-present__description-${id}`).classList.toggle('active');
     document.querySelector(`#product-present__description-${++id}`).classList.toggle('active');
 });
+
+$('.communication__before-btn')[0].addEventListener('click', (e) => {
+    if (e.target.classList.contains('active')) return;
+    $('.communication__before-btn')[0].classList.toggle('active');
+    $('.communication__after-btn')[0].classList.toggle('active');
+    $('.communication__before-content')[0].classList.toggle('active');
+    $('.communication__after-content')[0].classList.toggle('active');
+});
+
+$('.communication__after-btn')[0].addEventListener('click', (e) => {
+    if (e.target.classList.contains('active')) return;
+    $('.communication__before-btn')[0].classList.toggle('active');
+    $('.communication__after-btn')[0].classList.toggle('active');
+    $('.communication__before-content')[0].classList.toggle('active');
+    $('.communication__after-content')[0].classList.toggle('active');
+});

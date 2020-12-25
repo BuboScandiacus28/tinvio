@@ -17,6 +17,8 @@
 
 <body>
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -110,6 +112,30 @@
                 </div>
             </li>
         </ul>
+    </section>
+
+    <section class="communication">
+        <div class="container">
+            <div class="communication__before-content active">
+                <img src="./img/Before.png" alt="" class="communication__before-img">
+                <div class="communication__before-description-container">
+                    <h3 class="communication__before-description-title">Old-School Chaos</h3>
+                    <p class="communication__before-description-text">Unstructured orders across multiple apps and inboxes. New message notifications and alerts every few minutes</p>
+                </div>
+            </div>
+            <div class="communication__after-content">
+                <lottie-player class="communication__lottie-player" src="./animation.json" background="transparent"  speed="1" loop autoplay></lottie-player>
+                <div class="communication__after-description-container">
+                    <h3 class="communication__after-description-title">222-School Chaos2</h3>
+                    <p class="communication__after-description-text">Unstructured 222222 across multiple apps and inboxes. New message notifications and alerts every few minutes</p>
+                </div>
+            </div>
+            <div class="communication__befor-and-afte-btn-container">
+                <h2 class="communication__title section-title">Communication</h2>
+                <button class="communication__before-btn active">Before</button>
+                <button class="communication__after-btn">After</button>
+            </div>
+        </div>
     </section>
 
     <script src="./libs/jQuery/jquery-3.5.1.min.js"></script>
