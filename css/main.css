@@ -551,3 +551,136 @@ div.product-present__img-container_last-item img.product-present__img {
     background-color: #fff;
     color: #f43939;
 }
+
+/* example */
+
+.example {
+    padding: 99px 0;
+}
+
+.example__description-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1070px;
+
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+.example__description-text {
+    width: 450px;
+
+    font-size: 1.2rem;
+    letter-spacing: -0.08px;
+    line-height: 30px;
+
+    float: right;
+
+    margin-top: 14px;
+}
+
+.example__description-title {
+    width: 441px;
+
+    margin-left: 22px;
+}
+
+.example__items-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1030px;
+
+    margin: 75px auto 0;
+}
+
+.example__item {
+    width: 30.5%;
+
+    padding: 50px 2.5px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #e1eff0;
+
+    border-radius: 52px;
+}
+
+img.example__item-img {
+    transform: translate(-40px, -10px);
+}
+
+.example__item-text {
+    transform: translate(-5px, -43px);
+
+    letter-spacing: 0.6px;
+    font-size: 0.85rem;
+
+    color: #21272e;
+}
+
+.example__item-text::after,
+.example__item-text::before {
+    content: '';
+
+    position: absolute;
+    top: 7px;
+    right: -18px;
+
+    background-color: #21272e;
+
+    width: 8px;
+    height: 2px;
+
+    transform: rotate(45deg);
+}
+
+.example__item-text::before {
+    top: 12px;
+
+    transform: rotate(-45deg);
+}
+
+.example__item-text_success::after,
+.example__item-text_success::before {
+    content: '';
+
+    position: absolute;
+    top: 8px;
+    right: -20px;
+
+    background-color: #21272e;
+
+    width: 12px;
+    height: 2px;
+
+    transform: rotate(-45deg);
+}
+
+.example__item-text_success::before {
+    top: 9px;
+    right: -11px;
+
+    width: 7px;
+    height: 2px;
+
+    transform: rotate(45deg);
+}
+
+.example__dotted-path {
+    position: absolute;
+    
+    background: url(../img/line-2.png) 100% 0 no-repeat;
+    background-size: 963px 1520px;
+    background-position: left -0px top -1250px;
+    top: -100px;
+    left: -900px;
+    height: 290px;
+    width: 100%;
+
+    transform: rotate(180deg);
+}
