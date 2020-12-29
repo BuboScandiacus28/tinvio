@@ -33,3 +33,27 @@ $('.communication__after-btn')[0].addEventListener('click', (e) => {
     $('.communication__before-content')[0].classList.toggle('active');
     $('.communication__after-content')[0].classList.toggle('active');
 });
+
+document.querySelectorAll('.submit__form input:not([type="submit"])').forEach((item) => {
+    item.addEventListener('focus', (e) => {
+        if (e.target.parentNode.querySelector('.submit__form-placeholder-icon')) {
+            e.target.parentNode.querySelector('.submit__form-placeholder-icon').style.display = "none";
+        } else {
+            e.target.placeholder = '';
+        }
+        e.target.parentNode.querySelector('p').style.display = 'block';
+        e.preventDefault();
+    });
+});
+
+document.querySelectorAll('.submit__form input:not([type="submit"])').forEach((item) => {
+    item.addEventListener('blur', (e) => {
+        if (e.target.parentNode.querySelector('.submit__form-placeholder-icon')) {
+            e.target.parentNode.querySelector('.submit__form-placeholder-icon').style.display = "block";
+        } else {
+            e.target.placeholder = e.target.parentNode.querySelector('p').textContent;
+        }
+        e.target.parentNode.querySelector('p').style.display = 'none';
+        e.preventDefault();
+    })
+})

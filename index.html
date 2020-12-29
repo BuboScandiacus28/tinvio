@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
@@ -199,6 +200,14 @@
 
     <section class="submit">
         <div class="container">
+            <div class="submit__dotted-path"></div>
+            <ul class="submit__balls-container">
+                <div class="submit__ball"></div>
+                <div class="submit__ball"></div>
+                <div class="submit__ball"></div>
+                <div class="submit__ball"></div>
+                <div class="submit__ball"></div>
+            </ul>
             <div class="submit__inner">
                 <div class="submit__description">
                     <h3 class="submit__suptitle">let’s do this</h3>
@@ -240,10 +249,21 @@
                 </div>
                 <form action="" class="submit__form">
                     <h3 class="submit__form-title">Hi, we are Tinvio! And you?</h3>
-                    <input type="text" placeholder="Name" name="name" class="submit__form-input">
-                    <input type="text" placeholder="Business name" name="business name" class="submit__form-input">
-                    <input type="text" placeholder="+65" name="country-code" class="submit__form-input">
-                    <div class="submit__form-input-container">
+                    <div class="submit__form-input-container submit__form-name-container">
+                        <p class="submit__form-placeholder">Name</p>
+                        <input type="text" placeholder="Name" name="name" class="submit__form-input">
+                    </div>
+                    <div class="submit__form-input-container submit__form-business-name-container">
+                        <p class="submit__form-placeholder">Business name</p>
+                        <input type="text" placeholder="Business name" name="business-name" class="submit__form-input">
+                    </div>
+                    <div class="submit__form-input-container submit__form-country-code-container">
+                        <p class="submit__form-placeholder">+65</p>
+                        <input type="text" placeholder="+65" name="country-code" class="submit__form-input">
+                    </div>
+                    <div class="submit__form-input-container submit__form-phone-container">
+                        <p class="submit__form-placeholder">Phone</p>
+                        <img src="./img/icon-phone.png" alt="Иконка телефона" class="submit__form-placeholder-icon">
                         <input type="text" name="phone" class="submit__form-input">
                     </div>
                     <input type="submit" value="Get Started" class="submit__button">

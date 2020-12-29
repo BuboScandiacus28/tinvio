@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+input:active, input:focus {
+    outline: none;
+    border: 1px solid #3897ff;
+}
+
 *,
 *::after,
 *::before {
@@ -751,7 +756,85 @@ img.example__item-img {
     padding-top: 215px;
 }
 
+.submit__dotted-path {
+    position: absolute;
+    
+    background: url(../img/line-4.png) 100% 0 no-repeat;
+    background-size: 400px 700px;
+    background-position: left -0px top 0px;
+    top: -125px;
+    left: 280px;
+    height: 700px;
+    width: 400px;
+
+    z-index: 2;
+
+
+}
+
+.submit__ball {
+    position: absolute;
+    content: "";
+
+    border-radius: 50%;
+
+    z-index: 1;
+}
+
+.submit__ball:nth-child(1) {
+    width: 426px;
+    height: 426px;
+
+    top: -85px;
+    left: -115px;
+
+    background-color: #eff0f5;
+}   
+
+.submit__ball:nth-child(2) {
+    width: 256px;
+    height: 256px;
+
+    top: 100px;
+    left: 350px;
+
+    background-color: #f8e9e4;
+} 
+
+.submit__ball:nth-child(3) {
+    width: 188px;
+    height: 188px;
+
+    top: 340px;
+    left: 190px;
+
+    background-color: #f3efef;
+} 
+
+.submit__ball:nth-child(4) {
+    width: 144px;
+    height: 144px;
+
+    top: 375px;
+    left: -18px;
+
+    background-color: #e0eeef;
+} 
+
+.submit__ball:nth-child(5) {
+    width: 96px;
+    height: 96px;
+
+    bottom: -97px;
+    left: 120px;
+
+    background-color: #f0eef9;
+} 
+
 .submit__inner {
+    z-index: 2;
+    position: relative;
+    
     display: flex;
     justify-content: space-between;
 }
@@ -796,6 +879,40 @@ img.example__item-img {
     width: 288px;
 
     background-color: #fff;
+
+    position: relative;
+}
+
+.submit__our-office::after {
+    position: absolute;
+    content: 'Or meet us in';
+
+    top: -48px;
+    left: -52px;
+
+    font-family: 'handsean', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.9px;
+
+    z-index: 3;
+}
+
+.submit__our-office::before {
+    position: absolute;
+    content: '';
+
+    width: 120px;
+    height: 48px;
+
+    top: -70px;
+    left: -30px;
+
+    background: url(../img/arrow.png) 100% 0 no-repeat;
+    background-size: contain;
+
+    transform: scale(-1, 1);
+
+    z-index: 2;
 }
 
 .submit__our-office-item-container:nth-child(even) {
@@ -826,6 +943,40 @@ img.example__item-img {
 
     margin-right: 132px;
     padding: 0 34px 32px 32px;
+
+    background-color: #fff;
+
+    position: relative;
+}
+
+.submit__form::after {
+    position: absolute;
+    content: 'Let’s get to know each other';
+
+    top: -55px;
+    left: 74px;
+
+    font-family: 'handsean', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+
+    z-index: 3;
+}
+
+.submit__form::before {
+    position: absolute;
+    content: '';
+
+    width: 120px;
+    height: 50px;
+
+    top: -82px;
+    left: 24px;
+
+    background: url(../img/arrow.png) 100% 0 no-repeat;
+    background-size: contain;
+
+    z-index: 2;
 }
 
 .submit__form > *{
@@ -870,20 +1021,10 @@ input[type="search"]::placeholder {
     font-family: 'Manrope', sans-serif;
 } 
 
-.submit__form-input:not([name="phone"]) {
-    margin-top: 32px;
-}
-
-.submit__form-input[name="country-code"] {
-    width: 95px;
-
-    margin-right: 13.3px;
-}
-
 .submit__form-input-container {
     display: inline-block;
 
-    width: 230px;
+    width: 100%;
     height: 56px;
     
     margin-top: 32px;
@@ -892,12 +1033,21 @@ input[type="search"]::placeholder {
     position: relative;
 }
 
-.submit__form-input[name="phone"] {
-    width: 100%;
+div.submit__form-country-code-container {
+    width: 95px;
 
+    margin-right: 13.3px;
 }
 
-.submit__form-input-container::before {
+div.submit__form-phone-container {
+    width: 230px;
+}
+
+.submit__form-input {
+    width: 100%;
+}
+
+.submit__form-placeholder-icon {
     position: absolute;
     content: '';
     top: 50%;
@@ -908,6 +1058,23 @@ input[type="search"]::placeholder {
     height: 24px;
 
     background-image: url(../img/icon-phone.png);
+}
+
+.submit__form-placeholder {
+    position: absolute;
+    display: none;
+
+    top: 0;
+    left: 11px;
+
+    color: #3897ff;
+    background-color: #fff;
+
+    padding: 0 5px;
+
+    font-size: 0.8rem;
+
+    transform: translateY(-50%);
 }
 
 .submit__button {
