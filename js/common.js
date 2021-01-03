@@ -49,7 +49,7 @@ document.querySelectorAll('.submit__form input:not([type="submit"])').forEach((i
 document.querySelectorAll('.submit__form input:not([type="submit"])').forEach((item) => {
     item.addEventListener('blur', (e) => {
         if (e.target.parentNode.querySelector('.submit__form-placeholder-icon')) {
-            e.target.parentNode.querySelector('.submit__form-placeholder-icon').style.display = "block";
+            if (e.target.value === "") e.target.parentNode.querySelector('.submit__form-placeholder-icon').style.display = "block";
         } else {
             e.target.placeholder = e.target.parentNode.querySelector('p').textContent;
         }

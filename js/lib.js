@@ -6,7 +6,7 @@ let drawImg = (src, id) => {
 
     img.style.cssText = `   
         position: absolute;
-        zIndex: 9998;
+        z-index: 9998;
         top: 0;
         left: 50%;
         transform: translate(-50%, 0);
