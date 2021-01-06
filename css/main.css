@@ -22,6 +22,8 @@ body {
     color: #21272e;
 
     min-width: 300px;
+
+    overflow-x: hidden;
 }
 
 img {
@@ -46,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-	max-width: 1280px;
+    max-width: 1280px;
     width: 100%;
 
     margin: 0 auto;
@@ -75,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__inner {
-    padding: 0 60px 0 48px;
+    padding: 0 52px 0 40px;
 
     height: 100%;
 
@@ -94,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__btn {
-    padding: 9px 19px 10px 20px;
+    padding: 7px 20px 11px 20px;
 
     letter-spacing: -0.5px;
 
@@ -220,16 +222,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__left-background-img {
     background: url(../img/Boxes.png) no-repeat;
-    background-size: 100%;
+    background-size: 103.4%;
 
-    transform: translate(-105px, 0px);
+    transform: translate(-117px, 0px);
 }
 
 .intro__right-background-img {
     background: url(../img/Fruits.png) no-repeat;
     background-size: 85%;
 
-    transform: translate(115px, -15px);
+    transform: translate(115px, -17px);
 }
 
 .intro__dotted-path {
@@ -248,12 +250,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__inner {
     position: absolute;
-    top: 195px;
+    top: 194px;
     left: 50%;
 
     transform: translateX(-50%);
 
-    width: 812px;
+    width: 780px;
 }
 
 .intro__suptitle {
@@ -263,14 +265,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro__title {
-    margin: 14px auto 50px;
+    margin: 15px auto 48px;
 
     letter-spacing: 0.1px;
     font-size: 2.6rem;
 }
 
 .intro__btn {
-    padding: 14px 45px 17px;
+    padding: 14px 43px 16px;
 
     font-size: 1rem;
 
@@ -281,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro__btn-description {
-    margin-top: 16px;
+    margin-top: 19px;
     color: #909599;
 
     letter-spacing: 0.2px;
@@ -291,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 1000;
 
-    width: 84%;
+    width: 85%;
 
     transform: translateY(-145px);
 }
@@ -311,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .partners__dotted-path {
     position: absolute;
-    top: -490px;
+    top: -480px;
 
     height: calc(100% + 490px);
     width: 100%;
@@ -330,26 +332,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .partners__items-container {
-    margin-top: 50px;
+    margin: 43px 38px 0px 55px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.partners__item {
-    width: 9%;
+.partners__item:nth-child(1) {
+    width: 10%;
 }
 
-.partners__item_horizontal {
-    width: 12%;
+.partners__item:nth-child(2) {
+    width: 12.2%;
+
+    transform: translate(7px, 4px);
+}
+
+.partners__item:nth-child(3) {
+    width: 9%;
+
+    transform: translate(15px, 0px);
+}
+
+.partners__item:nth-child(4) {
+    width: 13.5%;
+
+    transform: translate(20px, 9px);
+}
+
+.partners__item:nth-child(5) {
+    width: 13.5%;
 }
 
 /* product-present */
 .product-present {
-    overflow: hidden;
-
     position: relative;
+    margin-top: 10px;
+    height: 615px;
 }
 
 .product-present__dotted-path {
@@ -358,24 +378,28 @@ h1, h2, h3, h4, h5, h6 {
     background: url(../img/line-2.png) 100% 0 no-repeat;
     background-size: 963px 1520px;
     background-position: left -22px top -702px;
-    top: -100px;
-    left: 285px;
+    top: -85px;
+    left: 275px;
     height: 1000px;
     width: 100%;
 }
 
 ul.product-present__carusel {
-    width: 60%;
+    max-width: 1120px;
+    width: calc(100% + 53px);
+    height: 590px;
+
+    position: absolute;
+    top: 0;
+    left: calc(1280px / 2.7);
     
-    transform: translateX(7%);
+    transform: translateX(53px);
 
     background-color: rgba(255, 67, 67, 0.253);
 
     border-radius: 60px;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 10px 0 0px auto;
+    
+    margin: 8px 0 0px auto;
     
 }
 
@@ -388,10 +412,12 @@ ul.product-present__carusel {
 
     position: absolute;
 
+    text-align: left;
+
     width: 380px;
 
-    top: 155px;
-    left: calc( (100vw - 1280px) / 2 + 70px);
+    top: 150px;
+    left: 70px;
 }
 
 .product-present__title {
@@ -401,7 +427,7 @@ ul.product-present__carusel {
 }
 
 .product-present__description-text {
-    margin-top: 26px;
+    margin-top: 25px;
 
     line-height: 30px;
     letter-spacing: -0.08px;
@@ -409,29 +435,33 @@ ul.product-present__carusel {
 }
 
 .product-present__img-container {
-    width: 96%;
-    margin: 0 0 0 auto;
-    transform: translate(-5.5%, 3.3%);
+    width: 100%;
 }
 
-.product-present__img-container_last-item {
-    transform: translate(0%, 0%);
+img.product-present__img {
+    max-width: 95%;
+
+    margin-top: 40px;
+
+    transform: translate(-15px, 0);
 }
 
-div.product-present__img-container_last-item img.product-present__img {
-    width: 90%;
+.owl-item:nth-child(3)  img.product-present__img{
+    max-width: 80%;
+
+    transform: translate(40px, 0);
 }
 
 .owl-nav {
     position: absolute;
-    bottom: 132px;
-    left: -315px;
+    bottom: 119px;
+    left: -319px;
 }
 
 .owl-nav button.owl-prev {
     position: absolute;
     top: 0px;
-    left: -135px;
+    left: -138px;
 }
 
 .owl-nav button {
@@ -459,8 +489,8 @@ div.product-present__img-container_last-item img.product-present__img {
 
 .owl-dots {
     position: absolute;
-    bottom: 153px;
-    left: -380px;
+    bottom: 138px;
+    left: -385px;
 } 
 
 .owl-dot.active {
@@ -480,7 +510,7 @@ div.product-present__img-container_last-item img.product-present__img {
 /* communication */
 
 .communication {
-    margin-top: 120px;
+    margin-top: 119px;
 
     background-color: #fafafc;
 
@@ -527,7 +557,7 @@ div.product-present__img-container_last-item img.product-present__img {
 .communication__after-description-container {
     position: absolute;
 
-    bottom: 44px;
+    bottom: 48px;
     right: -525px;
 
     width: 400px;
@@ -546,7 +576,8 @@ div.product-present__img-container_last-item img.product-present__img {
 
     letter-spacing: 0.54px;
 
-    padding-bottom: 15px;
+    margin-bottom: 13px;
+    
 }
 
 .communication__before-description-text,
@@ -564,6 +595,10 @@ div.product-present__img-container_last-item img.product-present__img {
     padding-left: 12.55%;
 
     width: 50%;
+}
+
+.communication__title {
+    margin-left: 2px;
 }
 
 .communication__before-btn::after {
@@ -587,7 +622,7 @@ div.product-present__img-container_last-item img.product-present__img {
     font-weight: 700;
 
     margin-top: 40px;
-    margin-right: 20px;
+    margin-right: 21px;
     padding: 16px 36px;
 
     background-color: rgba(0, 0, 0, 0);
@@ -598,7 +633,7 @@ div.product-present__img-container_last-item img.product-present__img {
 }
 
 .communication__after-btn {
-    padding: 16px 40px;
+    padding: 16px 41px;
 }
 
 .communication__before-btn.active,
@@ -610,7 +645,7 @@ div.product-present__img-container_last-item img.product-present__img {
 /* example */
 
 .example {
-    padding: 99px 0;
+    padding: 99px 0 112px;
 }
 
 .example__description-container {
@@ -653,6 +688,7 @@ div.product-present__img-container_last-item img.product-present__img {
 
 .example__item {
     width: 30.5%;
+    max-height: 552px;
 
     padding: 50px 2.5px 0;
 
@@ -803,18 +839,18 @@ img.example__item-img {
 /* submit */
 
 .submit {
-    padding-top: 215px;
+    padding-top: 214px;
 }
 
 .submit__dotted-path {
     position: absolute;
     
     background: url(../img/line-4.png) 100% 0 no-repeat;
-    background-size: 400px 700px;
+    background-size: 400px 800px;
     background-position: left -0px top 0px;
-    top: -125px;
+    top: -200px;
     left: 280px;
-    height: 700px;
+    height: 800px;
     width: 400px;
 
     z-index: 2;
@@ -846,7 +882,7 @@ img.example__item-img {
     height: 256px;
 
     top: 100px;
-    left: 350px;
+    left: 340px;
 
     background-color: #f8e9e4;
 } 
@@ -856,7 +892,7 @@ img.example__item-img {
     height: 188px;
 
     top: 340px;
-    left: 190px;
+    left: 180px;
 
     background-color: #f3efef;
 } 
@@ -876,7 +912,7 @@ img.example__item-img {
     height: 96px;
 
     bottom: -140px;
-    left: 120px;
+    left: 110px;
 
     background-color: #f0eef9;
 } 
@@ -896,7 +932,7 @@ img.example__item-img {
 }
 
 .submit__description {
-    padding-left: 61px;
+    padding-left: 54px;
 }
 
 .submit__suptitle {
@@ -991,7 +1027,7 @@ img.example__item-img {
 
     box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
 
-    margin-right: 132px;
+    margin-right: 124px;
     padding: 0 34px 32px 32px;
 
     background-color: #fff;
@@ -1166,7 +1202,7 @@ div.submit__form-phone-container {
 }
 
 .footer__inner {
-    padding: 0 60px 0 48px;
+    padding: 0 52px 0 40px;
 
     height: 100%;
 
@@ -1194,7 +1230,7 @@ div.submit__form-phone-container {
     position: absolute;
     
     bottom: 14px;
-    left: 82px;
+    left: 74px;
 
     font-size: 0.6rem;
     text-align: left;

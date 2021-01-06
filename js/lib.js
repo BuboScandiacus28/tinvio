@@ -13,7 +13,8 @@ let drawImg = (src, id) => {
         margin: auto;
         opacity: 0.3;
         display: none;
-        max-width: ${id};
+        min-width: ${id};
+        width: ${id};
     `;
 
     document.body.appendChild(img);
@@ -33,7 +34,7 @@ let drawBtn = (text, indent) => {
         background-color: #0d73fc;
         padding: 15px 30px;
         bottom: 50px;
-        right: ${indent}px;
+        left: ${indent}px;
         border-radius: 15px;
         border: 0px;
     `;
