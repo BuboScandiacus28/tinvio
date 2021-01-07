@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 input:active, input:focus {
     outline: none;
     border: 1px solid #3897ff;
@@ -246,6 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 
     height: 789px;
     width: 100%;
+
 }
 
 .intro__inner {
@@ -854,8 +860,6 @@ img.example__item-img {
     width: 400px;
 
     z-index: 2;
-
-
 }
 
 .submit__ball {
