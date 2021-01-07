@@ -970,6 +970,8 @@ img.example__item-img {
 
     background-color: #fff;
 
+    box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+
     position: relative;
 }
 

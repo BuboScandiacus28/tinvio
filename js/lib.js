@@ -11,7 +11,7 @@ let drawImg = (src, id) => {
         left: 50%;
         transform: translate(-50%, 0);
         margin: auto;
-        opacity: 0.3;
+        opacity: 0.5;
         display: none;
         min-width: ${id};
         width: ${id};
@@ -33,7 +33,7 @@ let drawBtn = (text, indent) => {
         color: #fff;
         background-color: #0d73fc;
         padding: 15px 30px;
-        bottom: 50px;
+        bottom: 150px;
         left: ${indent}px;
         border-radius: 15px;
         border: 0px;
