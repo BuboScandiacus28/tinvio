@@ -3,11 +3,13 @@ let drawImg = (src, id) => {
 
     img.setAttribute('src', src);
     img.setAttribute('id', id);
-
+    
+    
+    
     img.style.cssText = `   
         position: absolute;
         z-index: 9998;
-        top: -98px;
+        top: 0px;
         left: 50%;
         transform: translate(-50%, 0);
         margin: auto;
@@ -16,6 +18,21 @@ let drawImg = (src, id) => {
         min-width: ${id};
         width: ${id};
     `;
+    
+    if (id == '360px') {
+        img.style.cssText = `   
+            position: absolute;
+            z-index: 9998;
+            top: -98px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            margin: auto;
+            opacity: 0.5;
+            display: none;
+            min-width: ${id};
+            width: ${id};
+        `;
+    };
 
     document.body.appendChild(img);
 
@@ -33,8 +50,8 @@ let drawBtn = (text, indent) => {
         color: #fff;
         background-color: #0d73fc;
         padding: 15px 30px;
-        bottom: 150px;
-        left: ${indent}px;
+        bottom: 50px;
+        right: ${indent}px;
         border-radius: 15px;
         border: 0px;
     `;
